@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="3" parallel="tests">
+	<test name="Chrome">
+		<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			 <class name="com.iris22a.config.BaseForFeatures"/>
+      <class name="com.iris22a.config.TestBase"/>
+      <class name="com.iris22a.kids.test.KidsProducts"/>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Firefox">
+		<parameter name="browserName" value="Firefox"></parameter>
+		<classes>
+			 <class name="com.iris22a.config.BaseForFeatures"/>
+      <class name="com.iris22a.config.TestBase"/>
+      <class name="com.iris22a.kids.test.KidsProducts"/>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Internet Explorer">
+		<parameter name="browserName" value="Internet Explorer"></parameter>
+		<classes>
+			 <class name="com.iris22a.config.BaseForFeatures"/>
+      <class name="com.iris22a.config.TestBase"/>
+      <class name="com.iris22a.kids.test.KidsProducts"/>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
